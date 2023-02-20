@@ -121,7 +121,7 @@ function actions(){
    const jsActions =  Array.from(document.querySelectorAll('a[href*="https://js-action/"]'));
     //console.log(jsActions);
     jsActions.forEach(function(action){
-      actionString = action.attributes.href.value.split("/")[2];
+      actionString = action.attributes.href.value;
       console.log("action=" + actionString);
 
     });
