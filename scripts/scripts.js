@@ -118,8 +118,9 @@ function loadDelayed() {
 
 function actions(){
   try{
-   const jsActions = document.querySelectorall('a[href^="https://js-action/"]');
-  console.log(jsActions);
+   const jsActions = document.querySelectorall('[href^="https://js-action/"]');
+    alert(jsActions);
+   console.log(jsActions);
     
   }catch{
 
