@@ -123,7 +123,7 @@ function actions(){
    console.log(jsActions);
     
   }catch{
-
+    alert("error");
   }
 }
 
