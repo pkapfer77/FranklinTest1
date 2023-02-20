@@ -120,7 +120,7 @@ function actions(){
   try{
    const jsActions =  Array.from(document.querySelectorall('[href*="https://js-action/"]'));
     alert(jsActions);
-   console.log(jsActions);
+   
     
   }catch(error){
     console.error(error);
