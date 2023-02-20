@@ -119,7 +119,7 @@ function loadDelayed() {
 function actions(){
   try{
    const jsActions =  Array.from(document.querySelectorAll('[href*="https://js-action/"]'));
-    alert(jsActions);
+    console.log(jsActions);
    
     
   }catch(error){
