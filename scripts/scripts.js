@@ -118,7 +118,7 @@ function loadDelayed() {
 
 function actions(){
   try{
-   const js1 = document.querySelectorAll('[title="Start here"]');
+   const js1 = document.querySelector('[title="Start here"]');
   //js1.href = "javascript:alert('ok')";
     alert(js1.title);
   }catch{
