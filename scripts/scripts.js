@@ -118,8 +118,9 @@ function loadDelayed() {
 
 function actions(){
   try{
-  const js1 = document.querySelectorAll("a[href='https://js1']");
-  js1.href = "javascript:alert('ok')";
+   const js1 = document.querySelectorAll("a[href='https://js1']");
+  //js1.href = "javascript:alert('ok')";
+    alert(js1.title);
   }catch{
 
   }
@@ -128,8 +129,8 @@ function actions(){
 async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
-  actions();
   loadDelayed();
+  actions();
 }
 
 loadPage();
