@@ -562,7 +562,6 @@ export function setup() {
     }
   }
 }
-
 /**
  * auto init
  */
