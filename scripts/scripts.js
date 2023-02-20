@@ -12,6 +12,9 @@ import {
   loadBlocks,
   loadCSS,
 } from './lib-franklin.js';
+import {
+  loadActions,
+} from './actions.js';
 
 const LCP_BLOCKS = []; // add your LCP blocks to the list
 window.hlx.RUM_GENERATION = 'project-1'; // add your RUM generation information here
