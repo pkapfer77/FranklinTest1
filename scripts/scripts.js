@@ -118,7 +118,7 @@ function loadDelayed() {
 
 function actions(){
   try{
-   const js1 = document.querySelectorAll("a[href='https://js1']");
+   const js1 = document.querySelectorAll("[href='https://js1']");
   //js1.href = "javascript:alert('ok')";
     alert(js1.title);
   }catch{
