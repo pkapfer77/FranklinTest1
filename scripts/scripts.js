@@ -117,7 +117,12 @@ function loadDelayed() {
 }
 
 function actions(){
-  alert("test ok");
+  try{
+  const js1 = document.querySelectorAll("a[href='https://js1']");
+  js1.href = "javascript:alert('ok')";
+  }catch{
+
+  }
 }
 
 async function loadPage() {
