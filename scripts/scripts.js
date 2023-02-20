@@ -122,8 +122,8 @@ function actions(){
     alert(jsActions);
    console.log(jsActions);
     
-  }catch{
-    alert("error");
+  }catch(error){
+    console.error(error);
   }
 }
 
