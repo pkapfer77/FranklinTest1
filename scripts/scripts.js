@@ -14,11 +14,7 @@ import {
 } from './lib-franklin.js';
 
 
-///
-function startgame()
-{
-  console.log("start game now")
-}
+
 
 
 const LCP_BLOCKS = []; // add your LCP blocks to the list
@@ -153,3 +149,8 @@ async function loadPage() {
 }
 
 loadPage();
+///
+function startgame()
+{
+  console.log("start game now")
+}
