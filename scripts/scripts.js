@@ -124,7 +124,7 @@ function actions(){
       console.log(String(action.href.value));
       const actionString = String(action.href.value).split("/")[3] ;
       alert(actionString);
-      action.href = actionString + "();";
+      action.href = "javascript:" + actionString + "();";
       console.log("action=" + actionString);
 
     });
