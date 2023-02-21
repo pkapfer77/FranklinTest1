@@ -122,7 +122,7 @@ function actions(){
     //console.log(jsActions);
     jsActions.forEach(function(action){
       console.log(String(action.href.value));
-      const actionString = String(action.href.value).split("/")[3] ;
+      const actionString = String(action.href.value).split("/")[4] ;
       alert(actionString);
       action.href = "javascript:" + actionString + "();";
       console.log("action=" + actionString);
