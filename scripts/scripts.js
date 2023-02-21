@@ -14,6 +14,13 @@ import {
 } from './lib-franklin.js';
 
 
+///
+function startgame()
+{
+  console.log("start game now")
+}
+
+
 const LCP_BLOCKS = []; // add your LCP blocks to the list
 window.hlx.RUM_GENERATION = 'project-1'; // add your RUM generation information here
 
@@ -135,10 +142,7 @@ function actions(){
     console.error(error);
   }
 }
-function startgame()
-{
-  alert("tahat start my action here");
-}
+
 
 async function loadPage() {
   await loadEager(document);
