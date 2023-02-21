@@ -122,7 +122,7 @@ function actions(){
     //console.log(jsActions);
     jsActions.forEach(function(action){
       console.log(action);
-      actionString = action.attributes ;
+      actionString = action.href ;
       console.log("action=" + actionString);
 
     });
