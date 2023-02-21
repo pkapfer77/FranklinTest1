@@ -125,9 +125,9 @@ function loadActions(document)
   var head = document.getElementsByTagName('head')[0];
   var script = document.createElement('script');
   script.type = 'text/javascript';
-  script.onload = function() {
+  /*script.onload = function() {
   callFunctionFromScript();
-  }
+  }*/
   script.src = '/scripts/actions.js';
   head.appendChild(script);
 }
