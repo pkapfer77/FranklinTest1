@@ -118,15 +118,16 @@ function loadDelayed() {
   // load anything that can be postponed to the latest here
 }
 
-function loadActions(document)
+function loadActions()
 {
   document.head.appendChild(document.createElement('script').setAttribute('src','/scripts/actions.js'));
 }
 
 async function loadPage() {
   await loadEager(document);
-  loadActions(document);
+  
   await loadLazy(document);
+  loadActions();
   loadDelayed();
   
 }
