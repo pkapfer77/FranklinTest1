@@ -135,6 +135,10 @@ function actions(){
     console.error(error);
   }
 }
+function startgame()
+{
+  alert("tahat start my action here");
+}
 
 async function loadPage() {
   await loadEager(document);
