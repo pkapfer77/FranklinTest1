@@ -133,10 +133,11 @@ function loadActions(document)
 }
 
 async function loadPage() {
+  loadActions(document);
   await loadEager(document);
   
   await loadLazy(document);
-  loadActions(document);
+  
   loadDelayed();
   
 }
