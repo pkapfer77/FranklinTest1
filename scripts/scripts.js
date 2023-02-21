@@ -122,14 +122,12 @@ function loadActions(document)
 {
   console.log("head:"+document.head);
   //document.head.appendChild(document.createElement('script').setAttribute('src','/scripts/actions.js'));
-  var head = document.getElementsByTagName('head')[0];
-  var script = document.createElement('script');
-  script.type = 'text/javascript';
-  /*script.onload = function() {
-  callFunctionFromScript();
-  }*/
-  script.src = '/scripts/actions.js';
-  head.appendChild(script);
+
+  var sc = document.createElement("script");
+  sc.setAttribute("src", "/scripts/actions.js");
+  sc.setAttribute("type", "text/javascript");
+  document.head.appendChild(sc);
+
 }
 
 async function loadPage() {
