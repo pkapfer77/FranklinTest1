@@ -125,7 +125,7 @@ function loadActions(document)
 
 async function loadPage() {
   await loadEager(document);
-  await loadActions(document);
+  loadActions(document);
   await loadLazy(document);
   loadDelayed();
   
