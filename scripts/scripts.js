@@ -150,7 +150,6 @@ async function loadPage() {
 
 loadPage();
 ///
-function startgame()
-{
+export function startgame(){
   console.log("start game now")
 }
