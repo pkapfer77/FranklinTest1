@@ -146,9 +146,10 @@ function actions(){
 
 async function loadPage() {
   await loadEager(document);
+  actions();
   await loadLazy(document);
   loadDelayed();
-  actions();
+  
 }
 
 loadPage();
