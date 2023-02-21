@@ -121,7 +121,7 @@ function loadDelayed() {
 function loadActions(document)
 {
   console.log("head:"+document.head);
-  document.head.appendChild(document.createElement('script').setAttribute('src','/scripts/actions.js'));
+  //document.head.appendChild(document.createElement('script').setAttribute('src','/scripts/actions.js'));
   var head = document.getElementsByTagName('head')[0];
   var script = document.createElement('script');
   script.type = 'text/javascript';
