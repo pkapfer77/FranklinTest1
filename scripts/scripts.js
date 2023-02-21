@@ -16,7 +16,6 @@ import {
 
 
 
-
 const LCP_BLOCKS = []; // add your LCP blocks to the list
 window.hlx.RUM_GENERATION = 'project-1'; // add your RUM generation information here
 
@@ -119,37 +118,18 @@ function loadDelayed() {
   // load anything that can be postponed to the latest here
 }
 
-function actions(){
-  try{
-   const jsActions = (document.querySelectorAll('a[href*="https://js-action/"]'));
-    //console.log(jsActions);
-    jsActions.forEach(function(action){
-      console.log(String(action.href));
-      const actionURL = String(action.href) ;
-      const actionString = actionURL.split('/');
-
-      action.href = "javascript:" + actionString[3] + "();";
-      console.log("action=" + actionString[3]);
-
-    });
-   
-    
-  }catch(error){
-    console.error(error);
-  }
+function loadActions()
+{
+  document.head.appendChild(document.createElement('script').setAttribute('src','/scripts/actions.js'));
 }
-
 
 async function loadPage() {
   await loadEager(document);
-  actions();
   await loadLazy(document);
   loadDelayed();
   
 }
 
 loadPage();
-///
-export function startgame(){
-  console.log("start game now")
-}
+
+
