@@ -20,15 +20,15 @@ function defineActions(){
         div.style = "background-color: white;";
         div.style.width = "100px";
         div.style.height = "100px";
-        document.appendChild("div");
-        
+        document.body.appendChild("div");
+
         let div2 = document.createElement("div");
         div2.id = "label-container" ;
         div2.className = "div_class";
         div2.style = "background-color: black;";
         div2.style.width = "100px";
         div2.style.height = "100px";
-        document.appendChild("div2");
+        document.body.appendChild("div2");
       
     }catch(error){
       console.error(error);
