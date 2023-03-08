@@ -13,7 +13,7 @@ function defineActions(){
       });
       //<div id="webcam-container"></div>
       //<div id="label-container"></div>
-      const mydiv = (document.querySelector('data-id="container1"'));
+      const mydiv = (document.querySelector('div[data-id="container1"]'));
       mydiv.setAttribute("id","webcam-container");
       alert("ok");
 /*
