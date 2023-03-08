@@ -13,6 +13,7 @@
 
     // Load the image model and setup the webcam
     async function init() {
+
         const modelURL = URL + "model.json";
         const metadataURL = URL + "metadata.json";
 
@@ -58,5 +59,6 @@
 
   
       document.addEventListener("DOMContentLoaded", () => {
-        init();
+        //init();
+        setTimeout(init(),8000);
       });
