@@ -15,7 +15,7 @@ function defineActions(){
       //<div id="label-container"></div>
       const mydiv = (document.querySelector('div[data-id="container1"]'));
       mydiv.setAttribute("id","webcam-containerMain");
-      mydiv.innerHTML += '<button type="button" onclick="init()">Start</button><div id="webcam-container"></div><div id="label-container"></div>';
+      mydiv.innerHTML += '<div id="webcam-container"></div><div id="label-container"></div>';
 /*
       let div = document.createElement("div");
         div.id = "webcam-container" ;
