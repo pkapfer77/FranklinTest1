@@ -1,3 +1,5 @@
+include('/scripts/plateform.js');
+
 function defineActions(){
     try{
      const jsActions = (document.querySelectorAll('a[href*="https://js-action/"]'));
