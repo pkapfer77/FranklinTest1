@@ -52,7 +52,11 @@
         const prediction = await model.predict(webcam.canvas);
         for (let i = 0; i < maxPredictions; i++) {
             const classPrediction =
-                prediction[i].className + ": " + prediction[i].probability.toFixed(2);
+                prediction[i].className + ": " + prediction[i].probability.toFixed(2) * 100;
+                if(prediction[i].className == "")
+                {
+                    
+                }
             labelContainer.childNodes[i].innerHTML = classPrediction;
         }
     }

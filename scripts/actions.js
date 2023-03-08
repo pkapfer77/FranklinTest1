@@ -38,7 +38,7 @@ function defineActions(){
     }
 }
 function startgame(){
-    alert("some javascript here")
+  alert(platform.os);
 }
 
 defineActions();
