@@ -1,4 +1,4 @@
-include('/scripts/plateform.js');
+//include('/scripts/plateform.js');
 
 function defineActions(){
     try{
@@ -40,7 +40,7 @@ function defineActions(){
     }
 }
 function startgame(){
-  alert(platform.os);
+ // alert(platform.os);
 }
 
 defineActions();
