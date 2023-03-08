@@ -13,7 +13,10 @@ function defineActions(){
       });
       //<div id="webcam-container"></div>
       //<div id="label-container"></div>
-
+      const mydiv = (document.querySelector('a[data-id="container1"]'));
+      mydiv.setAttribute("id","webcam-container");
+      alert("ok");
+/*
       let div = document.createElement("div");
         div.id = "webcam-container" ;
         div.className = "div_class";
@@ -29,7 +32,7 @@ function defineActions(){
         div2.style.width = "100px";
         div2.style.height = "100px";
         document.body.appendChild("div2");
-      
+      */
     }catch(error){
       console.error(error);
     }
